@@ -68,7 +68,7 @@
     height: 25px;
     width: 25px;
   }
-
+  #skills .skill-wrapper,
   #horizontal-images .images-row {
     flex-wrap: wrap;
     gap: 25px;
