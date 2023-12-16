@@ -14,7 +14,7 @@ img {
   height: auto;
 }
 section {
-  padding: 80px 20px;
+  padding: 80px 20px !important;
 }
 
 /* ===================================================================== */
@@ -46,13 +46,10 @@ section {
   top: calc(80% - 1px);
 }
 
-header {
-  padding: 15px 0;
-  background-color: #37517e;
-  z-index: 99;
-}
-
 header .header-container {
+  position: relative;
+  padding: 15px 0;
+  z-index: 99;
   width: 100%;
   position: fixed;
   margin: auto;
@@ -226,8 +223,8 @@ nav .drodown-menu li.has-deep-dropdown:hover .deep-dropdown-menu {
 /* =================================================================== */
 
 #horizontal-images {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
 }
 
 #horizontal-images .images-row {
@@ -326,19 +323,35 @@ nav .drodown-menu li.has-deep-dropdown:hover .deep-dropdown-menu {
 
 .why-us {
   display: grid;
+  gap: 50px;
   height: 650px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  background-color: #f3f5fa;
+  align-items: center;
   padding: 0 50px;
   flex-direction: column;
-  position: fixed;
-  right: -500px;
 }
 
 .why-us .why-us-text {
   justify-self: end;
   align-self: center;
+}
+.why-us .why-us-text .text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.why-us .why-us-text .text .close-arrow {
+  display: none;
+}
+
+.why-us .why-us-text button {
+  background-color: transparent;
+  border: none;
+}
+
+.why-us .why-us-text button img {
+  height: 15px;
 }
 
 .why-us .why-us-text .why-us-text-1 {
@@ -349,6 +362,14 @@ nav .drodown-menu li.has-deep-dropdown:hover .deep-dropdown-menu {
 
 .why-us .why-us-text .why-us-text-1 .last {
   margin-bottom: 10px;
+}
+.why-us .why-us-text .active-text {
+  color: rgb(68, 68, 68);
+}
+
+.why-us .why-us-text .hidden-text {
+  display: none;
+  color: rgb(68, 68, 68);
 }
 
 /* .why-us .why-us-text .why-us-text-2 {
@@ -368,13 +389,14 @@ nav .drodown-menu li.has-deep-dropdown:hover .deep-dropdown-menu {
 }
 
 .why-us .why-us-text p {
-  font-size: 15px;
-  color: #848484;
+  font-size: 18px;
+
+  color: #343a40;
   overflow-y: hidden;
 }
 .why-us .why-us-text ul {
   list-style-type: none;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .why-us .why-us-text a {
