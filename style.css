@@ -47,16 +47,21 @@ section {
 }
 
 header .header-container {
+  background-color: #37517e;
   position: relative;
   padding: 15px 0;
   z-index: 99;
   width: 100%;
   position: fixed;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+
   padding-left: 15px;
   padding-right: 15px;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
 }
 
 header .logo h1 {
@@ -274,12 +279,11 @@ nav .drodown-menu li.has-deep-dropdown:hover .deep-dropdown-menu {
 }
 
 #about .container .about-text .about-text-1 ul {
-  padding: 0;
+  list-style-image: url("./icons/double-check-svgrepo-com.svg");
 }
 
 #about .container .about-text .about-text-1 ul li {
   padding: 0;
-  list-style-type: none;
   margin-bottom: 10px;
 }
 
@@ -320,16 +324,12 @@ nav .drodown-menu li.has-deep-dropdown:hover .deep-dropdown-menu {
 /* ==================================================================== */
 /* Why Us Section Starts */
 /* ===================================================================== */
-
 .why-us {
-  display: grid;
+  display: flex;
   gap: 50px;
-  height: 650px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+
   align-items: center;
   padding: 0 50px;
-  flex-direction: column;
 }
 
 .why-us .why-us-text {
@@ -423,6 +423,9 @@ nav .drodown-menu li.has-deep-dropdown:hover .deep-dropdown-menu {
 /* Skills Section Starts */
 /* ===================================================================== */
 
+#skills {
+  background-color: #f3f5fa;
+}
 #skills .skill-wrapper {
   display: flex;
   gap: 50px;
